@@ -12,20 +12,25 @@ __server = "babdelkaS"
 __client1 = "babdelkaSW"
 
 server_script = <<-SHELL
+    sudo su
+    sudo yum install httpd -y
+    sudo systemctl start httpd
     apk add curl
-    curl -sfL https://get.k3s.io | K3S_KUBECONFIG_MODE="644" INSTALL_K3S_EXEC="server" sh -s -
-    echo "Sleeping for 10 seconds to wait for k3s to start"
-    sleep 10
-    sudo cp /var/lib/rancher/k3s/server/token /vagrant_shared/
-    sudo chmod 755 /vagrant_shared/token
-    sudo cp /etc/rancher/k3s/k3s.yaml /vagrant_shared/
-    sudo chmod 755 /vagrant_shared/k3s.yaml
+    curl -sfL https://get.k3s.io | K3S_KUBECONFIG_MODE=644 flannel-iface=eth1 sh -
+    echo "Sleeping for 5 seconds to wait for k3s to start"
+    sleep 5
+    sudo chmod 644 /etc/rancher/k3s/k3s.yaml
+    sudo cat /var/lib/rancher/k3s/server/token > /var/www/html/index.html
     SHELL
 
 client_script = <<-SHELL
+    sudo su
     apk add curl
-    export K3S_TOKEN_FILE=/vagrant_shared/token
-    curl -sfL https://get.k3s.io | K3S_KUBECONFIG_MODE="644" INSTALL_K3S_EXEC="client" K3S_URL=https://$server_ip:6443 sh -s -
+    curl -s 192.168.42.110 > /tmp/token
+    export K3S_TOKEN=`cat /tmp/token`
+    curl -sfL https://get.k3s.io | K3S_URL=https://$server_ip:6443 K3S_NODE_NAME=$__client1 K3S_KUBECONFIG_MODE=644 sh -
+    echo "Sleeping for 5 seconds to wait for k3s to start"
+    sleep 5
     SHELL
 
 Vagrant.configure("2") do |config|
@@ -33,15 +38,7 @@ Vagrant.configure("2") do |config|
     config.vm.define __server do |server|
         server.vm.box = "centos/8"
         server.vm.hostname = __server
-        server.vm.network "private_network", ip: server_ip, bridge: "en0: Ethernet"
-		server.vm.synced_folder "./", "/vagrant_shared", type: "rsync",
-            rsync__exclude: ".git/"
-        #     rsync__args: ["--verbose", "--rsync-path='sudo rsync'", "--archive", "--delete", "-z"]
-		# server.vm.synced_folder "./", "/vagrant_shared", id: "vagrant-root",
-        #     owner: "vagrant",
-        #     group: "www-data",
-        #     mount_options: ["dmode=775,fmode=664"]
-
+        server.vm.network :private_network, ip: server_ip
         server.vm.provider "virtualbox" do |vb|
             vb.name = __server
             vb.gui = false
@@ -57,9 +54,7 @@ Vagrant.configure("2") do |config|
     config.vm.define __client1 do |client|
         client.vm.box = "centos/8"
         client.vm.hostname = __client1
-        client.vm.network "private_network", ip: client1_ip, bridge: "en0: Ethernet"
-		client.vm.synced_folder "./", "/vagrant_shared", type: "rsync",
-            rsync__exclude: ".git/" 
+        client.vm.network :private_network, ip: client1_ip
         client.vm.provider "virtualbox" do |vb|
             vb.name = __client1
             vb.gui = false
@@ -72,13 +67,5 @@ Vagrant.configure("2") do |config|
 		client.vm.provision "shell", inline: client_script
     end
 
-
-  # Enable provisioning with a shell script. Additional provisioners such as
-  # Ansible, Chef, Docker, Puppet and Salt are also available. Please see the
-  # documentation for more information about their specific syntax and use.
-  # config.vm.provision "shell", inline: <<-SHELL
-  #   apt-get update
-  #   apt-get install -y apache2
-  # SHELL
 end
 
