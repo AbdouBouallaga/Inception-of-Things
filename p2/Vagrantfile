@@ -1,0 +1,44 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# All Vagrant configuration is done below. The "2" in Vagrant.configure
+# configures the configuration version (we support older styles for
+# backwards compatibility). Please don't change it unless you know what
+# you're doing.
+
+server_ip = "192.168.42.110"
+__server = "babdelkaS"
+
+server_script = <<-SHELL
+    sudo su
+    # sudo yum install httpd -y
+    # sudo systemctl start httpd
+    apk add curl
+    curl -sfL https://get.k3s.io | K3S_KUBECONFIG_MODE=644 sh -s - --flannel-iface=eth1
+    echo "Sleeping for 5 seconds to wait for k3s to start"
+    sleep 5
+    sudo chmod 644 /etc/rancher/k3s/k3s.yaml
+    # sudo cat /var/lib/rancher/k3s/server/token > /var/www/html/index.html
+    SHELL
+
+Vagrant.configure("2") do |config|
+
+    config.vm.define __server do |server|
+        server.vm.box = "centos/8"
+        server.vm.hostname = __server
+        server.vm.network :private_network, ip: server_ip
+        config.vm.synced_folder "./scripts", "/shared_scripts", type: "rsync"
+        server.vm.provider "virtualbox" do |vb|
+            vb.name = __server
+            vb.gui = false
+            vb.cpus = 3
+            vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+            vb.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
+            vb.customize ['modifyvm', :id, '--audio', 'none']
+            vb.memory = "2048"
+        end
+		server.vm.provision "shell", inline: server_script
+    end
+
+end
+
