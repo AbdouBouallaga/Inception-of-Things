@@ -16,10 +16,10 @@ spec:
     spec:
       containers:
       - name: app-one
-        image: signalsciences/example-helloworld:latest
+        image: docker.io/etoews/hello-kubernetes:latest
         args:
         # Address for the app to listen on
-        - localhost:app1.com
+        - localhost:30301
         ports:
         - containerPort: 30301
 ---
@@ -41,10 +41,10 @@ spec:
     spec:
       containers:
       - name: app-two
-        image: signalsciences/example-helloworld:latest
+        image: docker.io/etoews/hello-kubernetes:latest
         args:
         # Address for the app to listen on
-        - localhost:app2.com
+        - localhost:30302
         ports:
         - containerPort: 30302
 ---
@@ -66,10 +66,10 @@ spec:
     spec:
       containers:
       - name: app-three
-        image: signalsciences/example-helloworld:latest
+        image: docker.io/etoews/hello-kubernetes:latest
         args:
         # Address for the app to listen on
-        - localhost:app3.com
+        - localhost:30303
         ports:
         - containerPort: 30303
 ---
