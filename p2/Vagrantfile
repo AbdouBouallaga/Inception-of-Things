@@ -19,6 +19,7 @@ server_script = <<-SHELL
     echo "Sleeping for 5 seconds to wait for k3s to start"
     sleep 5
     sudo chmod 644 /etc/rancher/k3s/k3s.yaml
+    kubectl apply -f /shared_scripts/dep.yaml
     # sudo cat /var/lib/rancher/k3s/server/token > /var/www/html/index.html
     SHELL
 
