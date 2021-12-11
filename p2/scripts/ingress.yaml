@@ -3,31 +3,36 @@ kind: Ingress
 metadata:
   name: apps-ingress
   namespace: default
-  annotations:
-    traefik.ingress.kubernetes.io/router.entrypoints: web
 
 spec:
   rules:
-    - http:
-        paths:
-          - path: /app1.com
-            pathType: Prefix
-            backend:
-              service:
-                name: app-one
-                port:
-                  number: 80
-          - path: /app2.cpm
-            pathType: Prefix
-            backend:
-              service:
-                name: app-two
-                port:
-                  number: 80
-          - path: /app3.com
-            pathType: Prefix
-            backend:
-              service:
-                name: app-three
-                port:
-                  number: 80
+  - host: app1.192-168-42-110.nip.io
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name:  app-one
+            port:
+              number: 80
+  - host: app2.192-168-42-110.nip.io
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name:  app-two
+            port:
+              number: 80
+  - host: app3.192-168-42-110.nip.io
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name:  app-three
+            port:
+              number: 80

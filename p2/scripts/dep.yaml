@@ -2,8 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: app-one
-  labels:
-    app: app-one
 spec:
   replicas: 1
   selector:
@@ -16,17 +14,31 @@ spec:
     spec:
       containers:
       - name: app-one
-        image: docker.io/etoews/hello-kubernetes:latest
+        image: paulbouwer/hello-kubernetes:1.5
         ports:
-        - containerPort: 30311
+        - containerPort: 8080
           protocol: TCP
+        env:
+        - name: MESSAGE
+          value: Hello from app1!
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-one
+  labels:
+    app: app-one
+spec:
+  ports:
+  - port: 80
+    targetPort: 8080
+  selector:
+    app: app-one
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: app-two
-  labels:
-    app: app-two
 spec:
   replicas: 3
   selector:
@@ -39,17 +51,31 @@ spec:
     spec:
       containers:
       - name: app-two
-        image: docker.io/etoews/hello-kubernetes:latest
+        image: paulbouwer/hello-kubernetes:1.5
         ports:
-        - containerPort: 30312
+        - containerPort: 8080
           protocol: TCP
+        env:
+        - name: MESSAGE
+          value: Hello from app2!
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-two
+  labels:
+    app: app-two
+spec:
+  ports:
+  - port: 80
+    targetPort: 8080
+  selector:
+    app: app-two
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: app-three
-  labels:
-    app: app-three
 spec:
   replicas: 1
   selector:
@@ -62,38 +88,13 @@ spec:
     spec:
       containers:
       - name: app-three
-        image: docker.io/etoews/hello-kubernetes:latest
+        image: paulbouwer/hello-kubernetes:1.5
         ports:
-        - containerPort: 30313
+        - containerPort: 8080
           protocol: TCP
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: app-one
-  labels:
-    app: app-one
-spec:
-  ports:
-  - name: http
-    port: 80
-    targetPort: 30311
-  selector:
-    app: app-one
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: app-two
-  labels:
-    app: app-two
-spec:
-  ports:
-  - name: http
-    port: 80
-    targetPort: 30312
-  selector:
-    app: app-two
+        env:
+        - name: MESSAGE
+          value: Hello from app3!
 ---
 apiVersion: v1
 kind: Service
@@ -103,8 +104,7 @@ metadata:
     app: app-three
 spec:
   ports:
-  - name: http
-    port: 80
-    targetPort: 30313
+  - port: 80
+    targetPort: 8080
   selector:
     app: app-three
