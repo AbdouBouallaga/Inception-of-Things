@@ -27,3 +27,4 @@ kubectl -n argocd patch secret argocd-secret \
   }}'
 kubectl create namespace dev
 kubectl apply -f project.yaml -n argocd
+kubectl apply -f application.yaml -n argocd

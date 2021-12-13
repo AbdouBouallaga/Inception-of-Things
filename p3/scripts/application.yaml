@@ -7,8 +7,8 @@ metadata:
 spec:
   project: argocd-autodep-project
   source:
-    repoURL: https://github.com/sokube/argocd_dummy.git
-    targetRevision: featurebranch_1
+    repoURL: https://github.com/AbdouBouallaga/argocd_dummy.git
+    targetRevision: app_v1
     path: app
     directory:
       recurse: true
