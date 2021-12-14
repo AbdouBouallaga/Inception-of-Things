@@ -1,4 +1,3 @@
-kubectl apply -f ingress.yaml -n argocd
 echo "used https://bcrypt-generator.com/ to generate password hash"
 kubectl -n argocd patch secret argocd-secret \
   -p '{"stringData": {

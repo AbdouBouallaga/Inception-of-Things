@@ -19,3 +19,4 @@ kubectl create namespace argocd
 kubectl apply -f install.yaml -n argocd
 echo "WAIT FOR ALL PODS TO BE READY THEN RUN THE script2.sh"
 sleep 10
+kubectl apply -f ingress.yaml -n argocd
