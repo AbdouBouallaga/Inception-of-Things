@@ -1,0 +1,75 @@
+2022-01-07_13:36:59.65298 t=2022-01-07T13:36:58+0000 lvl=info msg="Starting Grafana" logger=server version=7.5.11 commit=6f8c1d9fe4 branch=HEAD compiled=2021-10-05T11:14:33+0000
+2022-01-07_13:36:59.65372 t=2022-01-07T13:36:58+0000 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/conf/defaults.ini
+2022-01-07_13:36:59.65445 t=2022-01-07T13:36:58+0000 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/grafana.ini
+2022-01-07_13:36:59.65482 t=2022-01-07T13:36:58+0000 lvl=info msg="Path Home" logger=settings path=/var/opt/gitlab/grafana
+2022-01-07_13:36:59.65571 t=2022-01-07T13:36:58+0000 lvl=info msg="Path Data" logger=settings path=/var/opt/gitlab/grafana/data
+2022-01-07_13:36:59.66292 t=2022-01-07T13:36:58+0000 lvl=info msg="Path Logs" logger=settings path=/var/log/gitlab/grafana
+2022-01-07_13:36:59.66467 t=2022-01-07T13:36:58+0000 lvl=info msg="Path Plugins" logger=settings path=/var/opt/gitlab/grafana/data/plugins
+2022-01-07_13:36:59.66515 t=2022-01-07T13:36:58+0000 lvl=info msg="Path Provisioning" logger=settings path=/var/opt/gitlab/grafana/provisioning
+2022-01-07_13:36:59.68119 t=2022-01-07T13:36:58+0000 lvl=info msg="App mode production" logger=settings
+2022-01-07_13:36:59.69844 t=2022-01-07T13:36:58+0000 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+2022-01-07_13:36:59.70032 t=2022-01-07T13:36:58+0000 lvl=info msg="Starting DB migrations" logger=migrator
+2022-01-07_13:36:59.70213 t=2022-01-07T13:36:59+0000 lvl=info msg="migrations completed" logger=migrator performed=0 skipped=279 duration=1.696176ms
+2022-01-07_13:36:59.70726 t=2022-01-07T13:36:59+0000 lvl=info msg="Starting plugin search" logger=plugins
+2022-01-07_13:37:02.93793 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:37:02.937618Z","queryType":"exponential_heatmap_bucket_data"}
+2022-01-07_13:37:02.94018 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:37:02.937728Z","queryType":"linear_heatmap_bucket_data"}
+2022-01-07_13:37:02.94125 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:37:02.937747Z","queryType":"random_walk"}
+2022-01-07_13:37:02.95853 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:37:02.937763Z","queryType":"predictable_pulse"}
+2022-01-07_13:37:02.95911 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:37:02.937772Z","queryType":"predictable_csv_wave"}
+2022-01-07_13:37:02.95966 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:37:02.940783Z","queryType":"random_walk_table"}
+2022-01-07_13:37:02.96011 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:37:02.940804Z","queryType":"slow_query"}
+2022-01-07_13:37:02.96107 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:37:02.940816Z","queryType":"no_data_points"}
+2022-01-07_13:37:02.96159 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:37:02.940841Z","queryType":"datapoints_outside_range"}
+2022-01-07_13:37:02.96217 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:37:02.951114Z","queryType":"manual_entry"}
+2022-01-07_13:37:02.96789 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:37:02.951147Z","queryType":"csv_metric_values"}
+2022-01-07_13:37:02.97793 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:37:02.951155Z","queryType":"streaming_client"}
+2022-01-07_13:37:02.99264 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:37:02.951160Z","queryType":"live"}
+2022-01-07_13:37:03.00004 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:37:02.951167Z","queryType":"grafana_api"}
+2022-01-07_13:37:03.00053 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:37:02.951172Z","queryType":"arrow"}
+2022-01-07_13:37:03.00126 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:37:02.951176Z","queryType":"annotations"}
+2022-01-07_13:37:03.00163 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:37:02.951183Z","queryType":"table_static"}
+2022-01-07_13:37:03.00189 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:37:02.951187Z","queryType":"random_walk_with_error"}
+2022-01-07_13:37:03.00219 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:37:02.951201Z","queryType":"server_error_500"}
+2022-01-07_13:37:03.00245 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:37:02.951210Z","queryType":"logs"}
+2022-01-07_13:37:03.00264 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:37:02.951214Z","queryType":"node_graph"}
+2022-01-07_13:37:03.00289 {"@level":"debug","@message":"datasource: registering query type fallback handler","@timestamp":"2022-01-07T13:37:02.951218Z"}
+2022-01-07_13:37:03.09286 t=2022-01-07T13:37:03+0000 lvl=eror msg="Failed to read plugin provisioning files from directory" logger=provisioning.plugins path=/var/opt/gitlab/grafana/provisioning/plugins error="open /var/opt/gitlab/grafana/provisioning/plugins: no such file or directory"
+2022-01-07_13:37:03.19401 t=2022-01-07T13:37:03+0000 lvl=info msg="HTTP Server Listen" logger=http.server address=127.0.0.1:3000 protocol=http subUrl=/-/grafana socket=
+2022-01-07_13:38:26.08395 t=2022-01-07T13:38:25+0000 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"
+2022-01-07_13:38:28.14335 t=2022-01-07T13:38:28+0000 lvl=info msg="Starting Grafana" logger=server version=7.5.11 commit=6f8c1d9fe4 branch=HEAD compiled=2021-10-05T11:14:33+0000
+2022-01-07_13:38:28.14594 t=2022-01-07T13:38:28+0000 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/conf/defaults.ini
+2022-01-07_13:38:28.14756 t=2022-01-07T13:38:28+0000 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/grafana.ini
+2022-01-07_13:38:28.15251 t=2022-01-07T13:38:28+0000 lvl=info msg="Path Home" logger=settings path=/var/opt/gitlab/grafana
+2022-01-07_13:38:28.15404 t=2022-01-07T13:38:28+0000 lvl=info msg="Path Data" logger=settings path=/var/opt/gitlab/grafana/data
+2022-01-07_13:38:28.16098 t=2022-01-07T13:38:28+0000 lvl=info msg="Path Logs" logger=settings path=/var/log/gitlab/grafana
+2022-01-07_13:38:28.16247 t=2022-01-07T13:38:28+0000 lvl=info msg="Path Plugins" logger=settings path=/var/opt/gitlab/grafana/data/plugins
+2022-01-07_13:38:28.16372 t=2022-01-07T13:38:28+0000 lvl=info msg="Path Provisioning" logger=settings path=/var/opt/gitlab/grafana/provisioning
+2022-01-07_13:38:28.16639 t=2022-01-07T13:38:28+0000 lvl=info msg="App mode production" logger=settings
+2022-01-07_13:38:28.20470 t=2022-01-07T13:38:28+0000 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+2022-01-07_13:38:28.21393 t=2022-01-07T13:38:28+0000 lvl=info msg="Starting DB migrations" logger=migrator
+2022-01-07_13:38:28.40761 t=2022-01-07T13:38:28+0000 lvl=info msg="migrations completed" logger=migrator performed=0 skipped=279 duration=2.549249ms
+2022-01-07_13:38:28.43283 t=2022-01-07T13:38:28+0000 lvl=info msg="Starting plugin search" logger=plugins
+2022-01-07_13:38:34.88078 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:38:34.846958Z","queryType":"exponential_heatmap_bucket_data"}
+2022-01-07_13:38:34.89411 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:38:34.862202Z","queryType":"linear_heatmap_bucket_data"}
+2022-01-07_13:38:34.91290 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:38:34.862300Z","queryType":"random_walk"}
+2022-01-07_13:38:34.91382 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:38:34.862336Z","queryType":"predictable_pulse"}
+2022-01-07_13:38:34.91437 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:38:34.862356Z","queryType":"predictable_csv_wave"}
+2022-01-07_13:38:34.91535 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:38:34.862373Z","queryType":"random_walk_table"}
+2022-01-07_13:38:34.91596 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:38:34.862378Z","queryType":"slow_query"}
+2022-01-07_13:38:34.91791 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:38:34.862382Z","queryType":"no_data_points"}
+2022-01-07_13:38:34.92153 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:38:34.862401Z","queryType":"datapoints_outside_range"}
+2022-01-07_13:38:34.92254 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:38:34.862412Z","queryType":"manual_entry"}
+2022-01-07_13:38:34.93703 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:38:34.862416Z","queryType":"csv_metric_values"}
+2022-01-07_13:38:34.93799 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:38:34.862421Z","queryType":"streaming_client"}
+2022-01-07_13:38:34.93909 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:38:34.862427Z","queryType":"live"}
+2022-01-07_13:38:34.93940 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:38:34.862434Z","queryType":"grafana_api"}
+2022-01-07_13:38:34.94404 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:38:34.862440Z","queryType":"arrow"}
+2022-01-07_13:38:34.94632 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:38:34.862444Z","queryType":"annotations"}
+2022-01-07_13:38:34.95800 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:38:34.862449Z","queryType":"table_static"}
+2022-01-07_13:38:34.95973 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:38:34.862468Z","queryType":"random_walk_with_error"}
+2022-01-07_13:38:34.96069 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:38:34.862531Z","queryType":"server_error_500"}
+2022-01-07_13:38:34.96216 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:38:34.862550Z","queryType":"logs"}
+2022-01-07_13:38:34.96272 {"@level":"debug","@message":"datasource: registering query type handler","@timestamp":"2022-01-07T13:38:34.862556Z","queryType":"node_graph"}
+2022-01-07_13:38:34.96303 {"@level":"debug","@message":"datasource: registering query type fallback handler","@timestamp":"2022-01-07T13:38:34.862560Z"}
+2022-01-07_13:38:35.02942 t=2022-01-07T13:38:35+0000 lvl=eror msg="Failed to read plugin provisioning files from directory" logger=provisioning.plugins path=/var/opt/gitlab/grafana/provisioning/plugins error="open /var/opt/gitlab/grafana/provisioning/plugins: no such file or directory"
+2022-01-07_13:38:35.12273 t=2022-01-07T13:38:35+0000 lvl=info msg="HTTP Server Listen" logger=http.server address=127.0.0.1:3000 protocol=http subUrl=/-/grafana socket=

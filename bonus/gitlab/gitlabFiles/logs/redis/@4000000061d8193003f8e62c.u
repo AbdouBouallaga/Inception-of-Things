@@ -1,0 +1,7 @@
+2022-01-07_10:38:41.06296 492:C 07 Jan 2022 10:38:41.062 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2022-01-07_10:38:41.06324 492:C 07 Jan 2022 10:38:41.062 # Redis version=6.0.16, bits=64, commit=5895d119, modified=1, pid=492, just started
+2022-01-07_10:38:41.06346 492:C 07 Jan 2022 10:38:41.062 # Configuration loaded
+2022-01-07_10:38:41.06597 492:M 07 Jan 2022 10:38:41.065 * Running mode=standalone, port=0.
+2022-01-07_10:38:41.06619 492:M 07 Jan 2022 10:38:41.066 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+2022-01-07_10:38:41.06642 492:M 07 Jan 2022 10:38:41.066 # Server initialized
+2022-01-07_10:38:41.06672 492:M 07 Jan 2022 10:38:41.066 * The server is now ready to accept connections at /var/opt/gitlab/redis/redis.socket

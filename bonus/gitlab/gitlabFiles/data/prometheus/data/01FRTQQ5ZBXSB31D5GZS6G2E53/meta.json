@@ -1,0 +1,17 @@
+{
+	"ulid": "01FRTQQ5ZBXSB31D5GZS6G2E53",
+	"minTime": 1641564000000,
+	"maxTime": 1641571200000,
+	"stats": {
+		"numSamples": 5862152,
+		"numSeries": 33078,
+		"numChunks": 87993
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01FRTQQ5ZBXSB31D5GZS6G2E53"
+		]
+	},
+	"version": 1
+}

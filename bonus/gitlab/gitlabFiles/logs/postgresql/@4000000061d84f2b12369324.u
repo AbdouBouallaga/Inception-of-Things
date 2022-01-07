@@ -1,0 +1,34 @@
+2022-01-07_14:17:11.07335 LOG:  starting PostgreSQL 12.7 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0, 64-bit
+2022-01-07_14:17:11.08442 LOG:  listening on Unix socket "/var/opt/gitlab/postgresql/.s.PGSQL.5432"
+2022-01-07_14:17:11.65093 LOG:  database system was interrupted; last known up at 2022-01-07 13:55:25 GMT
+2022-01-07_14:17:13.56823 FATAL:  the database system is starting up
+2022-01-07_14:17:17.73186 FATAL:  the database system is starting up
+2022-01-07_14:17:22.75761 FATAL:  the database system is starting up
+2022-01-07_14:17:27.78474 FATAL:  the database system is starting up
+2022-01-07_14:17:28.31020 LOG:  database system was not properly shut down; automatic recovery in progress
+2022-01-07_14:17:28.50152 LOG:  invalid record length at 0/36B6530: wanted 24, got 0
+2022-01-07_14:17:28.50195 LOG:  redo is not required
+2022-01-07_14:17:28.96176 LOG:  database system is ready to accept connections
+2022-01-07_14:17:32.81111 LOG:  no match in usermap "gitlab" for user "gitlab" authenticated as "root"
+2022-01-07_14:17:32.81163 FATAL:  Peer authentication failed for user "gitlab"
+2022-01-07_14:17:32.81243 DETAIL:  Connection matched pg_hba.conf line 70: "local   all         all                               peer map=gitlab"
+2022-01-07_14:17:33.12213 LOG:  no match in usermap "gitlab" for user "gitlab" authenticated as "root"
+2022-01-07_14:17:33.12268 FATAL:  Peer authentication failed for user "gitlab"
+2022-01-07_14:17:33.12289 DETAIL:  Connection matched pg_hba.conf line 70: "local   all         all                               peer map=gitlab"
+2022-01-07_14:17:33.20320 LOG:  no match in usermap "gitlab" for user "gitlab" authenticated as "root"
+2022-01-07_14:17:33.20421 FATAL:  Peer authentication failed for user "gitlab"
+2022-01-07_14:17:33.20444 DETAIL:  Connection matched pg_hba.conf line 70: "local   all         all                               peer map=gitlab"
+2022-01-07_14:19:44.46940 LOG:  could not send data to client: Broken pipe
+2022-01-07_14:19:44.47193 STATEMENT:  SELECT relnamespace::regnamespace as schemaname,
+2022-01-07_14:19:44.47217 	       relname as relname,
+2022-01-07_14:19:44.47240 	       pg_total_relation_size(oid) bytes
+2022-01-07_14:19:44.47282 	  FROM pg_class
+2022-01-07_14:19:44.47313 	 WHERE relkind = 'r';
+2022-01-07_14:19:44.47335 	
+2022-01-07_14:19:44.47358 FATAL:  connection to client lost
+2022-01-07_14:19:44.51536 STATEMENT:  SELECT relnamespace::regnamespace as schemaname,
+2022-01-07_14:19:44.51597 	       relname as relname,
+2022-01-07_14:19:44.51626 	       pg_total_relation_size(oid) bytes
+2022-01-07_14:19:44.51650 	  FROM pg_class
+2022-01-07_14:19:44.51698 	 WHERE relkind = 'r';
+2022-01-07_14:19:44.51725 	

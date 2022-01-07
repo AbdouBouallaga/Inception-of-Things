@@ -1,0 +1,11 @@
+2022-01-07_17:32:44.28463 265:C 07 Jan 2022 17:32:44.284 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2022-01-07_17:32:44.28492 265:C 07 Jan 2022 17:32:44.284 # Redis version=6.0.16, bits=64, commit=5895d119, modified=1, pid=265, just started
+2022-01-07_17:32:44.28512 265:C 07 Jan 2022 17:32:44.284 # Configuration loaded
+2022-01-07_17:32:44.28898 265:M 07 Jan 2022 17:32:44.288 * Running mode=standalone, port=0.
+2022-01-07_17:32:44.28921 265:M 07 Jan 2022 17:32:44.288 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+2022-01-07_17:32:44.28940 265:M 07 Jan 2022 17:32:44.288 # Server initialized
+2022-01-07_17:32:44.30535 265:M 07 Jan 2022 17:32:44.305 * Loading RDB produced by version 6.0.16
+2022-01-07_17:32:44.30714 265:M 07 Jan 2022 17:32:44.305 * RDB age 2136 seconds
+2022-01-07_17:32:44.30761 265:M 07 Jan 2022 17:32:44.305 * RDB memory usage when created 6.93 Mb
+2022-01-07_17:32:44.31525 265:M 07 Jan 2022 17:32:44.315 * DB loaded from disk: 0.017 seconds
+2022-01-07_17:32:44.31550 265:M 07 Jan 2022 17:32:44.315 * The server is now ready to accept connections at /var/opt/gitlab/redis/redis.socket

@@ -1,0 +1,21 @@
+2022-01-07_14:16:58.81366 264:C 07 Jan 2022 14:16:58.813 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2022-01-07_14:16:58.81389 264:C 07 Jan 2022 14:16:58.813 # Redis version=6.0.16, bits=64, commit=5895d119, modified=1, pid=264, just started
+2022-01-07_14:16:58.81407 264:C 07 Jan 2022 14:16:58.813 # Configuration loaded
+2022-01-07_14:16:58.81847 264:M 07 Jan 2022 14:16:58.818 * Running mode=standalone, port=0.
+2022-01-07_14:16:58.81872 264:M 07 Jan 2022 14:16:58.818 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+2022-01-07_14:16:58.81892 264:M 07 Jan 2022 14:16:58.818 # Server initialized
+2022-01-07_14:16:58.82330 264:M 07 Jan 2022 14:16:58.823 * Loading RDB produced by version 6.0.16
+2022-01-07_14:16:58.82346 264:M 07 Jan 2022 14:16:58.823 * RDB age 415 seconds
+2022-01-07_14:16:58.82370 264:M 07 Jan 2022 14:16:58.823 * RDB memory usage when created 6.57 Mb
+2022-01-07_14:16:58.82902 264:M 07 Jan 2022 14:16:58.828 * DB loaded from disk: 0.010 seconds
+2022-01-07_14:16:58.82918 264:M 07 Jan 2022 14:16:58.828 * The server is now ready to accept connections at /var/opt/gitlab/redis/redis.socket
+2022-01-07_14:21:59.13097 264:M 07 Jan 2022 14:21:59.061 * 10 changes in 300 seconds. Saving...
+2022-01-07_14:21:59.18412 264:M 07 Jan 2022 14:21:59.184 * Background saving started by pid 1067
+2022-01-07_14:21:59.24294 1067:C 07 Jan 2022 14:21:59.241 * DB saved on disk
+2022-01-07_14:21:59.25352 1067:C 07 Jan 2022 14:21:59.253 * RDB: 1 MB of memory used by copy-on-write
+2022-01-07_14:21:59.29276 264:M 07 Jan 2022 14:21:59.291 * Background saving terminated with success
+2022-01-07_14:27:00.06836 264:M 07 Jan 2022 14:27:00.067 * 10 changes in 300 seconds. Saving...
+2022-01-07_14:27:00.06915 264:M 07 Jan 2022 14:27:00.069 * Background saving started by pid 1576
+2022-01-07_14:27:00.09272 1576:C 07 Jan 2022 14:27:00.092 * DB saved on disk
+2022-01-07_14:27:00.09322 1576:C 07 Jan 2022 14:27:00.093 * RDB: 1 MB of memory used by copy-on-write
+2022-01-07_14:27:00.16996 264:M 07 Jan 2022 14:27:00.169 * Background saving terminated with success

@@ -1,0 +1,17 @@
+{
+	"ulid": "01FRTCEQB646SW7Y5K7T65T1GB",
+	"minTime": 1641552186201,
+	"maxTime": 1641556800000,
+	"stats": {
+		"numSamples": 7639463,
+		"numSeries": 27954,
+		"numChunks": 52945
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01FRTCEQB646SW7Y5K7T65T1GB"
+		]
+	},
+	"version": 1
+}

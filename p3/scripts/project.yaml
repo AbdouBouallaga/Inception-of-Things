@@ -5,10 +5,8 @@ metadata:
   labels:
     app: argocd-autodep
 spec:
-  # Allow manifests to deploy only from Sokube git repositories 
   sourceRepos:
   - "https://github.com/AbdouBouallaga/*"
-  # Only permit to deploy applications in the same cluster
   destinations:
   - namespace: dev
     server: https://kubernetes.default.svc

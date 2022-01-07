@@ -1,0 +1,31 @@
+2022-01-07_15:10:54.23226 264:C 07 Jan 2022 15:10:54.232 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2022-01-07_15:10:54.23263 264:C 07 Jan 2022 15:10:54.232 # Redis version=6.0.16, bits=64, commit=5895d119, modified=1, pid=264, just started
+2022-01-07_15:10:54.23289 264:C 07 Jan 2022 15:10:54.232 # Configuration loaded
+2022-01-07_15:10:54.24219 264:M 07 Jan 2022 15:10:54.242 * Running mode=standalone, port=0.
+2022-01-07_15:10:54.24265 264:M 07 Jan 2022 15:10:54.242 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+2022-01-07_15:10:54.24303 264:M 07 Jan 2022 15:10:54.242 # Server initialized
+2022-01-07_15:10:54.25139 264:M 07 Jan 2022 15:10:54.251 * Loading RDB produced by version 6.0.16
+2022-01-07_15:10:54.25199 264:M 07 Jan 2022 15:10:54.251 * RDB age 1679 seconds
+2022-01-07_15:10:54.25250 264:M 07 Jan 2022 15:10:54.251 * RDB memory usage when created 5.76 Mb
+2022-01-07_15:10:54.26572 264:M 07 Jan 2022 15:10:54.265 * DB loaded from disk: 0.020 seconds
+2022-01-07_15:10:54.26620 264:M 07 Jan 2022 15:10:54.265 * The server is now ready to accept connections at /var/opt/gitlab/redis/redis.socket
+2022-01-07_15:15:55.09034 264:M 07 Jan 2022 15:15:55.082 * 10 changes in 300 seconds. Saving...
+2022-01-07_15:15:55.10735 264:M 07 Jan 2022 15:15:55.107 * Background saving started by pid 2600
+2022-01-07_15:15:55.13350 2600:C 07 Jan 2022 15:15:55.133 * DB saved on disk
+2022-01-07_15:15:55.13472 2600:C 07 Jan 2022 15:15:55.133 * RDB: 0 MB of memory used by copy-on-write
+2022-01-07_15:15:55.20743 264:M 07 Jan 2022 15:15:55.207 * Background saving terminated with success
+2022-01-07_15:20:56.04275 264:M 07 Jan 2022 15:20:56.042 * 10 changes in 300 seconds. Saving...
+2022-01-07_15:20:56.04359 264:M 07 Jan 2022 15:20:56.043 * Background saving started by pid 5411
+2022-01-07_15:20:56.06061 5411:C 07 Jan 2022 15:20:56.060 * DB saved on disk
+2022-01-07_15:20:56.06116 5411:C 07 Jan 2022 15:20:56.061 * RDB: 0 MB of memory used by copy-on-write
+2022-01-07_15:20:56.14468 264:M 07 Jan 2022 15:20:56.144 * Background saving terminated with success
+2022-01-07_15:25:57.08666 264:M 07 Jan 2022 15:25:57.086 * 10 changes in 300 seconds. Saving...
+2022-01-07_15:25:57.08804 264:M 07 Jan 2022 15:25:57.087 * Background saving started by pid 8225
+2022-01-07_15:25:57.13464 8225:C 07 Jan 2022 15:25:57.134 * DB saved on disk
+2022-01-07_15:25:57.13543 8225:C 07 Jan 2022 15:25:57.135 * RDB: 1 MB of memory used by copy-on-write
+2022-01-07_15:25:57.18864 264:M 07 Jan 2022 15:25:57.188 * Background saving terminated with success
+2022-01-07_15:30:58.05086 264:M 07 Jan 2022 15:30:58.050 * 10 changes in 300 seconds. Saving...
+2022-01-07_15:30:58.05200 264:M 07 Jan 2022 15:30:58.051 * Background saving started by pid 11020
+2022-01-07_15:30:58.06834 11020:C 07 Jan 2022 15:30:58.068 * DB saved on disk
+2022-01-07_15:30:58.06898 11020:C 07 Jan 2022 15:30:58.068 * RDB: 1 MB of memory used by copy-on-write
+2022-01-07_15:30:58.15298 264:M 07 Jan 2022 15:30:58.152 * Background saving terminated with success

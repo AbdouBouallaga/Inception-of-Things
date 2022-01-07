@@ -1,0 +1,42 @@
+2022-01-07_12:54:04.96179 LOG:  starting PostgreSQL 12.7 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0, 64-bit
+2022-01-07_12:54:04.98415 LOG:  listening on Unix socket "/var/opt/gitlab/postgresql/.s.PGSQL.5432"
+2022-01-07_12:54:05.48603 LOG:  database system was interrupted; last known up at 2022-01-07 12:52:09 GMT
+2022-01-07_12:54:27.40580 LOG:  database system was not properly shut down; automatic recovery in progress
+2022-01-07_12:54:27.62300 LOG:  invalid record length at 0/36B5B60: wanted 24, got 0
+2022-01-07_12:54:27.62338 LOG:  redo is not required
+2022-01-07_12:54:28.19975 LOG:  database system is ready to accept connections
+2022-01-07_12:56:55.74948 LOG:  could not send data to client: Broken pipe
+2022-01-07_12:56:55.75038 STATEMENT:  SELECT relnamespace::regnamespace as schemaname,
+2022-01-07_12:56:55.75077 	       relname as relname,
+2022-01-07_12:56:55.75103 	       pg_total_relation_size(oid) bytes
+2022-01-07_12:56:55.75126 	  FROM pg_class
+2022-01-07_12:56:55.75178 	 WHERE relkind = 'r';
+2022-01-07_12:56:55.75200 	
+2022-01-07_12:56:55.75223 FATAL:  connection to client lost
+2022-01-07_12:56:55.75251 STATEMENT:  SELECT relnamespace::regnamespace as schemaname,
+2022-01-07_12:56:55.75301 	       relname as relname,
+2022-01-07_12:56:55.75383 	       pg_total_relation_size(oid) bytes
+2022-01-07_12:56:55.75433 	  FROM pg_class
+2022-01-07_12:56:55.76839 	 WHERE relkind = 'r';
+2022-01-07_12:56:55.76873 	
+2022-01-07_13:02:29.31477 received TERM from runit, sending INT instead to force quit connections
+2022-01-07_13:02:29.31655 LOG:  received fast shutdown request
+2022-01-07_13:02:29.31916 LOG:  aborting any active transactions
+2022-01-07_13:02:29.43053 FATAL:  terminating connection due to administrator command
+2022-01-07_13:02:29.43877 FATAL:  terminating connection due to administrator command
+2022-01-07_13:02:29.45090 FATAL:  terminating connection due to administrator command
+2022-01-07_13:02:29.45259 FATAL:  terminating connection due to administrator command
+2022-01-07_13:02:29.45462 FATAL:  terminating connection due to administrator command
+2022-01-07_13:02:29.45522 FATAL:  terminating connection due to administrator command
+2022-01-07_13:02:29.45594 FATAL:  terminating connection due to administrator command
+2022-01-07_13:02:29.45652 FATAL:  terminating connection due to administrator command
+2022-01-07_13:02:29.45743 FATAL:  terminating connection due to administrator command
+2022-01-07_13:02:29.45782 FATAL:  terminating connection due to administrator command
+2022-01-07_13:02:29.45919 FATAL:  terminating connection due to administrator command
+2022-01-07_13:02:29.45958 FATAL:  terminating connection due to administrator command
+2022-01-07_13:02:29.46016 FATAL:  terminating connection due to administrator command
+2022-01-07_13:02:29.46091 FATAL:  terminating connection due to administrator command
+2022-01-07_13:02:29.46210 FATAL:  terminating connection due to administrator command
+2022-01-07_13:02:29.46256 LOG:  background worker "logical replication launcher" (PID 493) exited with exit code 1
+2022-01-07_13:02:29.56938 LOG:  shutting down
+2022-01-07_13:02:29.86378 LOG:  database system is shut down

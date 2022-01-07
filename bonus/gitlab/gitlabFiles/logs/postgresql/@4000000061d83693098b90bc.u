@@ -1,0 +1,96 @@
+2022-01-07_10:42:46.30554 LOG:  starting PostgreSQL 12.7 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0, 64-bit
+2022-01-07_10:42:46.32231 LOG:  listening on Unix socket "/var/opt/gitlab/postgresql/.s.PGSQL.5432"
+2022-01-07_10:42:46.98962 LOG:  database system was interrupted; last known up at 2022-01-07 10:39:12 GMT
+2022-01-07_10:43:06.33546 FATAL:  the database system is starting up
+2022-01-07_10:43:06.33816 FATAL:  the database system is starting up
+2022-01-07_10:43:06.34011 FATAL:  the database system is starting up
+2022-01-07_10:43:09.12091 LOG:  database system was not properly shut down; automatic recovery in progress
+2022-01-07_10:43:09.35729 LOG:  redo starts at 0/15CE290
+2022-01-07_10:43:13.35781 FATAL:  the database system is starting up
+2022-01-07_10:43:13.63977 FATAL:  the database system is starting up
+2022-01-07_10:43:13.66083 FATAL:  the database system is starting up
+2022-01-07_10:43:13.76984 FATAL:  the database system is starting up
+2022-01-07_10:43:14.03954 FATAL:  the database system is starting up
+2022-01-07_10:43:14.05505 FATAL:  the database system is starting up
+2022-01-07_10:43:16.07467 FATAL:  the database system is starting up
+2022-01-07_10:43:21.24071 FATAL:  the database system is starting up
+2022-01-07_10:43:21.24326 FATAL:  the database system is starting up
+2022-01-07_10:43:21.24639 FATAL:  the database system is starting up
+2022-01-07_10:43:31.03039 FATAL:  the database system is starting up
+2022-01-07_10:43:36.19737 FATAL:  the database system is starting up
+2022-01-07_10:43:36.20129 FATAL:  the database system is starting up
+2022-01-07_10:43:36.20472 FATAL:  the database system is starting up
+2022-01-07_10:43:37.80315 FATAL:  the database system is starting up
+2022-01-07_10:43:38.00187 FATAL:  the database system is starting up
+2022-01-07_10:43:38.00905 FATAL:  the database system is starting up
+2022-01-07_10:43:38.48661 FATAL:  the database system is starting up
+2022-01-07_10:43:38.78441 FATAL:  the database system is starting up
+2022-01-07_10:43:38.80154 FATAL:  the database system is starting up
+2022-01-07_10:43:46.01375 FATAL:  the database system is starting up
+2022-01-07_10:43:48.13150 FATAL:  the database system is starting up
+2022-01-07_10:43:48.65507 FATAL:  the database system is starting up
+2022-01-07_10:43:48.67697 FATAL:  the database system is starting up
+2022-01-07_10:43:51.18540 FATAL:  the database system is starting up
+2022-01-07_10:43:51.19018 FATAL:  the database system is starting up
+2022-01-07_10:43:51.19394 FATAL:  the database system is starting up
+2022-01-07_10:44:01.01071 FATAL:  the database system is starting up
+2022-01-07_10:44:06.16590 FATAL:  the database system is starting up
+2022-01-07_10:44:06.16970 FATAL:  the database system is starting up
+2022-01-07_10:44:06.17068 FATAL:  the database system is starting up
+2022-01-07_10:44:06.50297 FATAL:  the database system is starting up
+2022-01-07_10:44:06.77306 FATAL:  the database system is starting up
+2022-01-07_10:44:06.78868 FATAL:  the database system is starting up
+2022-01-07_10:44:09.61352 FATAL:  the database system is starting up
+2022-01-07_10:44:10.05750 FATAL:  the database system is starting up
+2022-01-07_10:44:10.18729 FATAL:  the database system is starting up
+2022-01-07_10:44:10.28859 FATAL:  the database system is starting up
+2022-01-07_10:44:10.57756 FATAL:  the database system is starting up
+2022-01-07_10:44:10.70327 FATAL:  the database system is starting up
+2022-01-07_10:44:11.20428 FATAL:  the database system is starting up
+2022-01-07_10:44:11.20652 FATAL:  the database system is starting up
+2022-01-07_10:44:11.29035 FATAL:  the database system is starting up
+2022-01-07_10:44:11.47069 FATAL:  the database system is starting up
+2022-01-07_10:44:11.47187 FATAL:  the database system is starting up
+2022-01-07_10:44:12.07905 FATAL:  the database system is starting up
+2022-01-07_10:44:12.19171 FATAL:  the database system is starting up
+2022-01-07_10:44:12.81494 FATAL:  the database system is starting up
+2022-01-07_10:44:12.91934 FATAL:  the database system is starting up
+2022-01-07_10:44:13.02187 FATAL:  the database system is starting up
+2022-01-07_10:44:15.95746 FATAL:  the database system is starting up
+2022-01-07_10:44:16.00276 FATAL:  the database system is starting up
+2022-01-07_10:44:16.24480 FATAL:  the database system is starting up
+2022-01-07_10:44:16.28049 FATAL:  the database system is starting up
+2022-01-07_10:44:31.05613 FATAL:  the database system is starting up
+2022-01-07_10:44:33.45091 FATAL:  the database system is starting up
+2022-01-07_10:44:33.78355 FATAL:  the database system is starting up
+2022-01-07_10:44:33.80320 FATAL:  the database system is starting up
+2022-01-07_10:44:36.24509 FATAL:  the database system is starting up
+2022-01-07_10:44:36.24888 FATAL:  the database system is starting up
+2022-01-07_10:44:36.24942 FATAL:  the database system is starting up
+2022-01-07_10:44:44.73120 FATAL:  the database system is starting up
+2022-01-07_10:44:45.06152 FATAL:  the database system is starting up
+2022-01-07_10:44:45.07672 FATAL:  the database system is starting up
+2022-01-07_10:44:46.04143 FATAL:  the database system is starting up
+2022-01-07_10:44:46.16399 FATAL:  the database system is starting up
+2022-01-07_10:44:46.70268 FATAL:  the database system is starting up
+2022-01-07_10:44:46.84816 FATAL:  the database system is starting up
+2022-01-07_10:44:46.94709 FATAL:  the database system is starting up
+2022-01-07_10:44:47.26398 FATAL:  the database system is starting up
+2022-01-07_10:44:47.38916 FATAL:  the database system is starting up
+2022-01-07_10:44:47.99439 FATAL:  the database system is starting up
+2022-01-07_10:44:47.99740 FATAL:  the database system is starting up
+2022-01-07_10:44:48.09731 FATAL:  the database system is starting up
+2022-01-07_10:44:48.35048 FATAL:  the database system is starting up
+2022-01-07_10:44:48.35466 FATAL:  the database system is starting up
+2022-01-07_10:44:49.15003 FATAL:  the database system is starting up
+2022-01-07_10:44:49.23664 FATAL:  the database system is starting up
+2022-01-07_10:44:49.82701 FATAL:  the database system is starting up
+2022-01-07_10:44:49.99551 FATAL:  the database system is starting up
+2022-01-07_10:44:50.07118 FATAL:  the database system is starting up
+2022-01-07_10:44:51.20221 FATAL:  the database system is starting up
+2022-01-07_10:44:51.20439 FATAL:  the database system is starting up
+2022-01-07_10:44:51.20684 FATAL:  the database system is starting up
+2022-01-07_10:44:51.29189 FATAL:  the database system is starting up
+2022-01-07_10:44:53.09929 LOG:  invalid record length at 0/36863F8: wanted 24, got 0
+2022-01-07_10:44:53.09950 LOG:  redo done at 0/36863D0
+2022-01-07_10:44:54.45375 LOG:  database system is ready to accept connections

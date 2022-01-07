@@ -1,0 +1,26 @@
+{"level":"info","msg":"Wrapper started","pid":282,"time":"2022-01-07T12:48:03.182Z","wrapper":282}
+{"level":"info","msg":"finding gitaly","pid":282,"pid_file":"/var/opt/gitlab/gitaly/gitaly.pid","time":"2022-01-07T12:48:03.182Z","wrapper":282}
+{"level":"info","msg":"spawning a process","pid":282,"time":"2022-01-07T12:48:03.187Z","wrapper":282}
+{"gitaly":289,"level":"info","msg":"monitoring gitaly","pid":282,"time":"2022-01-07T12:48:03.188Z","wrapper":282}
+time="2022-01-07T12:48:04Z" level=info msg="Starting GitalyversionGitaly, version 14.6.1"
+time="2022-01-07T12:48:04Z" level=warning msg="git path not configured. Using default path resolution" resolvedPath=/opt/gitlab/embedded/bin/git
+{"latencies":[0.001,0.005,0.025,0.1,0.5,1,10,30,60,300,1500],"level":"info","msg":"grpc prometheus histograms enabled","time":"2022-01-07T12:48:04.215Z"}
+{"level":"info","msg":"License database preloaded","time":"2022-01-07T12:48:06.982Z"}
+{"level":"info","msg":"clearing disk cache object folder","storage":"default","time":"2022-01-07T12:48:06.987Z"}
+{"level":"info","msg":"finished tempdir cleaner walk","storage":"default","time":"2022-01-07T12:48:06.987Z","time_ms":4}
+{"level":"info","msg":"moving disk cache object folder to /var/opt/gitlab/git-data/repositories/+gitaly/tmp/diskcache3847047732","storage":"default","time":"2022-01-07T12:48:06.990Z"}
+{"level":"info","msg":"Starting file walker for /var/opt/gitlab/git-data/repositories/+gitaly/cache","path":"/var/opt/gitlab/git-data/repositories/+gitaly/cache","time":"2022-01-07T12:48:06.993Z"}
+{"level":"info","msg":"Starting file walker for /var/opt/gitlab/git-data/repositories/+gitaly/state","path":"/var/opt/gitlab/git-data/repositories/+gitaly/state","time":"2022-01-07T12:48:06.993Z"}
+{"level":"info","msg":"cleared all cache object files in /var/opt/gitlab/git-data/repositories/+gitaly/tmp/diskcache3847047732 after 10.48846ms","storage":"default","time":"2022-01-07T12:48:07.004Z"}
+{"level":"info","msg":"starting RSS monitor","supervisor.name":"gitaly-ruby.1","supervisor.rss_threshold":209715200,"time":"2022-01-07T12:48:07.491Z"}
+{"level":"info","msg":"starting RSS monitor","supervisor.name":"gitaly-ruby.0","supervisor.rss_threshold":209715200,"time":"2022-01-07T12:48:07.491Z"}
+{"level":"warning","msg":"spawned","supervisor.args":["bundle","exec","bin/ruby-cd","/var/opt/gitlab/gitaly","/opt/gitlab/embedded/service/gitaly-ruby/bin/gitaly-ruby","289","/var/opt/gitlab/gitaly/internal_sockets/ruby.0"],"supervisor.name":"gitaly-ruby.0","supervisor.pid":313,"time":"2022-01-07T12:48:07.491Z"}
+{"level":"warning","msg":"spawned","supervisor.args":["bundle","exec","bin/ruby-cd","/var/opt/gitlab/gitaly","/opt/gitlab/embedded/service/gitaly-ruby/bin/gitaly-ruby","289","/var/opt/gitlab/gitaly/internal_sockets/ruby.1"],"supervisor.name":"gitaly-ruby.1","supervisor.pid":314,"time":"2022-01-07T12:48:07.492Z"}
+{"level":"warning","msg":"[core] grpc: addrConn.createTransport failed to connect to {/var/opt/gitlab/gitaly/internal_sockets/ruby.1 /var/opt/gitlab/gitaly/internal_sockets/ruby.1 \u003cnil\u003e 0 \u003cnil\u003e}. Err: connection error: desc = \"transport: Error while dialing dial unix /var/opt/gitlab/gitaly/internal_sockets/ruby.1: connect: connection refused\". Reconnecting...","pid":289,"system":"system","time":"2022-01-07T12:48:07.493Z"}
+{"level":"warning","msg":"[core] grpc: addrConn.createTransport failed to connect to {/var/opt/gitlab/gitaly/internal_sockets/ruby.0 /var/opt/gitlab/gitaly/internal_sockets/ruby.0 \u003cnil\u003e 0 \u003cnil\u003e}. Err: connection error: desc = \"transport: Error while dialing dial unix /var/opt/gitlab/gitaly/internal_sockets/ruby.0: connect: connection refused\". Reconnecting...","pid":289,"system":"system","time":"2022-01-07T12:48:07.493Z"}
+{"address":"/var/opt/gitlab/gitaly/gitaly.socket","level":"info","msg":"listening at unix address","time":"2022-01-07T12:48:07.496Z"}
+{"address":"/var/opt/gitlab/gitaly/internal_sockets/internal_289.sock","level":"info","msg":"listening at unix address","time":"2022-01-07T12:48:07.497Z"}
+{"address":"localhost:9236","level":"info","msg":"starting prometheus listener","time":"2022-01-07T12:48:07.503Z"}
+{"level":"info","msg":"maintenance: daily scheduled","pid":289,"scheduled":"2022-01-08T12:00:00Z","time":"2022-01-07T12:48:07.504Z"}
+{"level":"info","msg":"PID 314 BUNDLE_GEMFILE=/opt/gitlab/embedded/service/gitaly-ruby/Gemfile","supervisor.args":["bundle","exec","bin/ruby-cd","/var/opt/gitlab/gitaly","/opt/gitlab/embedded/service/gitaly-ruby/bin/gitaly-ruby","289","/var/opt/gitlab/gitaly/internal_sockets/ruby.1"],"supervisor.name":"gitaly-ruby.1","time":"2022-01-07T12:48:07.818Z"}
+{"level":"info","msg":"PID 313 BUNDLE_GEMFILE=/opt/gitlab/embedded/service/gitaly-ruby/Gemfile","supervisor.args":["bundle","exec","bin/ruby-cd","/var/opt/gitlab/gitaly","/opt/gitlab/embedded/service/gitaly-ruby/bin/gitaly-ruby","289","/var/opt/gitlab/gitaly/internal_sockets/ruby.0"],"supervisor.name":"gitaly-ruby.0","time":"2022-01-07T12:48:07.821Z"}

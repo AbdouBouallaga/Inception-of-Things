@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  labels:
+    app: argocd-autodep
+  name: argocd-autodep-app
+spec:
+  project: argocd-autodep-project
+  source:
+    repoURL: http://10.12.11.2/A6dou/autodeployp3.git
+    targetRevision: master
+    path: app
+    directory:
+      recurse: true
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: dev
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: true
