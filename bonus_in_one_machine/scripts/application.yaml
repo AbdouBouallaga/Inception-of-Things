@@ -7,7 +7,7 @@ metadata:
 spec:
   project: argocd-autodep-project
   source:
-    repoURL: http://10.12.11.2/A6dou/autodeployp3.git
+    repoURL: http://10.12.99.1.nio.ip/A6dou/autodeployp3.git
     targetRevision: master
     path: app
     directory:

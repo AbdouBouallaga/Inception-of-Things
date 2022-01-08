@@ -1,0 +1,46 @@
+script = <<-SHELL
+    sudo curl -sfL https://get.k3s.io | K3S_KUBECONFIG_MODE=644 sh -s - --flannel-iface=eth1
+    echo "Sleeping for 10 seconds to wait for k3s to start"
+    sleep 10
+    sudo cat /var/lib/rancher/k3s/server/token
+    ip a show eth1 | grep "inet "
+    cd scripts
+    kubectl create namespace argocd
+    kubectl apply -f install.yaml -n argocd
+    echo "WAIT FOR ALL PODS TO BE READY THEN RUN THE script2.sh"
+    sleep 10
+    kubectl apply -f ingress.yaml -n argocd
+    echo "used https://bcrypt-generator.com/ to generate password hash"
+    kubectl -n argocd patch secret argocd-secret \
+      -p '{"stringData": {
+        "admin.password": "$2a$10$sKPFVu8k2JkGRo2nBVR6kOpeKDsv.SJ35qSmvXNmwkmV.avp3bWwm",
+        "admin.passwordMtime": "'$(date +%FT%T%Z)'"
+      }}'
+    kubectl create namespace dev
+    kubectl apply -f project.yaml -n argocd
+    kubectl apply -f application.yaml -n argocd
+    echo "sleep 2min to wait for argocd to be ready"
+    sleep 120
+    cd gitlab_sc
+    kubectl create namespace gitlab
+    kubectl apply -f service.yaml
+    kubectl apply -f glconfig.yaml
+    kubectl apply -f deployment.yaml
+    kubectl apply -f ingress.yaml
+    SHELL
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "centos/8"
+  config.vm.hostname = "part3bonus"
+  config.vm.network "public_network", bridge: "en0: Ethernet", ip: "10.12.99.1", netmask: "brd 10.12.255.255", gateway: "10.12.254.254"
+  config.vm.provision :file, source: "./scripts", destination: "~/"
+  config.vm.provision :file, source: "./gitlab", destination: "/srv"
+  config.vm.provider "virtualbox" do |vb|
+          vb.name = "part3bonus"
+          vb.gui = false
+          vb.cpus = 4
+          vb.customize ['modifyvm', :id, '--audio', 'none']
+          vb.memory = "6350"
+  end
+  config.vm.provision "shell", inline: script
+end

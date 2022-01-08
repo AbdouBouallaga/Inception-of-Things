@@ -29,4 +29,12 @@ kubectl -n argocd patch secret argocd-secret \
   }}'
 kubectl create namespace dev
 kubectl apply -f project.yaml -n argocd
-kubectl apply -f application.yaml -n argocd 
+kubectl apply -f application.yaml -n argocd
+echo "sleep 2min to wait for argocd to be ready"
+sleep 120
+cd gitlab_sc
+kubectl create namespace gitlab
+kubectl apply -f service.yaml
+kubectl apply -f glconfig.yaml
+kubectl apply -f deployment.yaml
+kubectl apply -f ingress.yaml

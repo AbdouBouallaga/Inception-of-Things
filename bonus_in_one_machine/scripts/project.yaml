@@ -6,7 +6,7 @@ metadata:
     app: argocd-autodep
 spec:
   sourceRepos:
-  - "http://10.12.11.2/A6dou/*"
+  - "http://10.12.99.1.nio.ip/A6dou/*"
   destinations:
   - namespace: dev
     server: https://kubernetes.default.svc
