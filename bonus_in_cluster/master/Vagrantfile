@@ -18,7 +18,7 @@ script = <<-SHELL
       /usr/local/bin/kubectl apply -f project.yaml -n argocd
       /usr/local/bin/kubectl apply -f application.yaml -n argocd
       echo "argocd will be ready soon, 10s the token will be displayed"
-      # /usr/local/bin/kubectl taint nodes node1
+      /usr/local/bin/kubectl taint nodes part3bonus key1=value1:NoSchedule
       sleep10
       sudo cat /var/lib/rancher/k3s/server/token > /vagrant/token
       cat /vagrant/token

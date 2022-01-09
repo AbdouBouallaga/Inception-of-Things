@@ -14,7 +14,6 @@ script = <<-SHELL
 Vagrant.configure("2") do |config|
   config.vm.box = "centos/8"
   config.vm.hostname = "GitlabNode"
-  config.vm.network "public_network", bridge: "en0: Ethernet"
   config.vm.provider "virtualbox" do |vb|
           vb.name = "GitlabNode"
           vb.gui = false
