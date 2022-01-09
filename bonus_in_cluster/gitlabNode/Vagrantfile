@@ -1,5 +1,5 @@
 script = <<-SHELL
-    sudo curl -s https://pastebin.com/raw/BB6Lhek1 > /tmp/token
+    sudo curl -s https://pastebin.com/raw/V6DJ4Amr > /tmp/token
     sudo su
     apk add curl
     export K3S_TOKEN_FILE=/tmp/token
