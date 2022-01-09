@@ -47,16 +47,16 @@ spec:
             name: gitlab-config
         - name: config-volume
           hostPath:
-            path: /srv/gitlab/config
+            path: /vagrant/gitlab/config
         - name: logs-volume
           hostPath:
-            path: /srv/gitlab/logs
+            path: /vagrant/gitlab/logs
         - name: data-volume
           hostPath:
-            path: /srv/gitlab/data
+            path: /vagrant/gitlab/data
         - name: reg-volume
           hostPath:
-            path: /srv/gitlab/reg
+            path: /vagrant/gitlab/reg
         - name: uploads-volume
           hostPath:
-            path: /srv/gitlab/uploads
+            path: /vagrant/gitlab/uploads

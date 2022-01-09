@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  labels:
+    app: argocd-autodep
+  name: argocd-autodep-app
+spec:
+  project: argocd-autodep-project
+  source:
+    repoURL: http://gitlab.10.12.99.1.nip.io/A6dou/p3bonus.git
+    targetRevision: master
+    path: app
+    directory:
+      recurse: true
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: dev
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: true
