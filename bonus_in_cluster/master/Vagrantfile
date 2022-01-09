@@ -18,11 +18,12 @@ script = <<-SHELL
       /usr/local/bin/kubectl apply -f project.yaml -n argocd
       /usr/local/bin/kubectl apply -f application.yaml -n argocd
       echo "argocd will be ready soon, 10s the token will be displayed"
-      /usr/local/bin/kubectl taint nodes part3bonus key1=value1:NoSchedule
-      sleep10
+      sleep 10
       sudo cat /var/lib/rancher/k3s/server/token > /vagrant/token
       cat /vagrant/token
       echo "past this token into https://pastebin.com/ to share with your team"
+      sleep 30
+      /usr/local/bin/kubectl taint nodes part3bonus key1=value1:NoSchedule
     SHELL
 
 Vagrant.configure("2") do |config|
