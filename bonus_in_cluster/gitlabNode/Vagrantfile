@@ -1,14 +1,13 @@
 script = <<-SHELL
     sudo curl -s https://pastebin.com/raw/V6DJ4Amr > /tmp/token
     sudo su
-    apk add curl
     export K3S_TOKEN_FILE=/tmp/token
     export K3S_URL=https://10.12.99.255:6443
     curl -sfL https://get.k3s.io | K3S_KUBECONFIG_MODE=644 sh -s - --flannel-iface=eth1
     echo "Sleeping for 5 seconds to wait for k3s to start"
     sleep 5
     cd /vagrant
-    tar xvzf archive.tar.gz
+    sudo tar xvzf archive.tar.gz
     SHELL
 
 Vagrant.configure("2") do |config|
